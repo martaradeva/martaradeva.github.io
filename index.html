@@ -15,9 +15,12 @@
 			visibility: hidden;
 		}
 		body {
-			margin: 0;
+			margin: 75px;
 			overflow: hidden;
 			font-family: helvetica, arial, sans-serif;
+			background-image: url("http://www.unsigneddesign.com/Essential%20Grunge/grunge1.jpg");
+			background-repeat: no-repeat;
+			background-size: 100% auto;
 		}
 		.leftpart {
 			box-sizing: border-box;
@@ -32,19 +35,35 @@
 			float: right;
 			
 		}
+		.descr-text {
+			box-sizing: border-box;
+			padding-left: 50px;
+		}
+		a:link {
+			color: #9F2C06;
+		}
+		a:visited {
+			color: #72240A;
+		}
+		a:hover {
+			color: #FF4000;
+			
+		}
 	</style>
 </head>
 <body>
 	<div class="leftpart">
 		<h1 class="myname">Мартина Радева</h1>
-		<p class"descr-text">Добре дошли на личната ми страница. Тук може да намерите връзки за присъствието ми в интернет.</p>
+		<div class="descr-text">Добре дошли на личната ми страница. 
+			<p>Тук може да намерите връзки за присъствието ми в интернет.</p>
+		</div>
 	</div>
 
 	<div class="rightpart">
 		<h1 class="hidden">Мартина Радева</h1>
-		<p>m: <a href="mailto:martaradeva@gmail.com">martaradeva@gmail.com</a></p>
-		<p>t: 1234566789</p>
-		<p>e: <a href="https://www.facebook.com/martaradeva" class="facebook">facebook.com/martaradeva</a></p>
+		<p><a href="mailto:martaradeva@gmail.com">email</a></p>
+		<p><a href="https://www.facebook.com/martaradeva" class="facebook">facebook</a></p>
+		<p><a href="https://www.linkedin.com/in/martaradeva">linkedin</a></p>
 	</div>
 </body>
 </html>
