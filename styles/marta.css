@@ -1,0 +1,46 @@
+html, body, .leftpart {
+	height: 100%;
+}
+h1 {
+	
+	font-size: 30px;
+	font-style: bold;
+}
+.hidden {
+	visibility: hidden;
+}
+body {
+	margin: 15px;
+	overflow: hidden;
+	font-family: helvetica, arial, sans-serif;
+	background-image: url("../images/bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.leftpart {
+	box-sizing: border-box;
+	padding-right: 5px;
+	width: 30%;
+	float: left;
+	text-align: right;
+	border-right: 1px solid black;
+}
+.rightpart {
+	width: 68%;
+	float: right;
+	
+}
+.descr-text {
+	box-sizing: border-box;
+	
+}
+a:link {
+	color: #9F2C06;
+}
+a:visited {
+	color: #72240A;
+}
+a:hover {
+	color: #FF4000;
+	
+}

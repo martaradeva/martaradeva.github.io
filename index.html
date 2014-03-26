@@ -1,70 +1,12 @@
 <!DOCTYPE html>
+<!-- This is the main page that redirects to the Bulgarian one -->
 <html>
 <head>
-	<title>Моята лична страница</title>
-	<style type="text/css">
-		html, body, .leftpart {
-			height: 100%;
-		}
-		h1 {
-			
-			font-size: 30px;
-			font-style: bold;
-		}
-		.hidden {
-			visibility: hidden;
-		}
-		body {
-			margin: 75px;
-			overflow: hidden;
-			font-family: helvetica, arial, sans-serif;
-			background-image: url("bg.png");
-			background-repeat: no-repeat;
-			background-size: 100% auto;
-		}
-		.leftpart {
-			box-sizing: border-box;
-			padding-right: 5px;
-			width: 30%;
-			float: left;
-			text-align: right;
-			border-right: 1px solid black;
-		}
-		.rightpart {
-			width: 68%;
-			float: right;
-			
-		}
-		.descr-text {
-			box-sizing: border-box;
-			padding-left: 50px;
-		}
-		a:link {
-			color: #9F2C06;
-		}
-		a:visited {
-			color: #72240A;
-		}
-		a:hover {
-			color: #FF4000;
-			
-		}
-	</style>
+	<meta http-equiv="refresh" content="0; url=./bg/index.html" />
+	<title>Пренасочване...</title>
+	<link rel="stylesheet" type="text/css" href="styles/marta.css">
 </head>
 <body>
-	<div class="leftpart">
-		<h1 class="myname">Мартина Радева</h1>
-		<div class="descr-text">Добре дошли на личната ми страница. 
-			<p>Тук може да намерите връзки за присъствието ми в интернет.</p>
-		</div>
-	</div>
 
-	<div class="rightpart">
-		<h1 class="hidden">Мартина Радева</h1>
-		<p><a href="mailto:martaradeva@gmail.com">email</a></p>
-		<p><a href="https://www.facebook.com/martaradeva" class="facebook">facebook</a></p>
-		<p><a href="https://www.linkedin.com/in/martaradeva">linkedin</a></p>
-		<p><a href="http://issuu.com/noe3/docs/pf-martina-radeva-2013-09-19">portfolio</a></p>
-	</div>
 </body>
 </html>
