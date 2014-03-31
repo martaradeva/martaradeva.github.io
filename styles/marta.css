@@ -8,17 +8,21 @@ body {
 	margin: 15px;
 	overflow: hidden;
 	font-family: helvetica, arial, sans-serif;
-	background-image: url("../images/textures/txt11.jpg");
-	background-repeat: no-repeat;
+	background-image: url("../images/bg-gray.png");
+	/*background-repeat: no-repeat;*/
 	background-size: cover;
 }
 h1 {
 	
 	font-size: 30px;
-	font-family: georgia, serif;
-	font-style: bold-italic;
+	font-family: helvetica, arial, sans-serif;
+	
 	color: #ff3366;
 	vertical-align= bottom;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
 }
 .tt{
 	margin-top: 20%;
@@ -26,10 +30,13 @@ h1 {
 	height: 60%;
 }
 .tdleft {
-	text-align: right; 
+	text-align: right;
+	vertical-align: bottom;
+	padding-right: 20px; 
 }
 .tdright {
 	text-align: left; 
+	vertical-align: bottom; 
 }
 /* LINKS*/
 a:link {
