@@ -1,12 +1,6 @@
 html, body {
 	height: 100%;
 }
-h1 {
-	
-	font-size: 30px;
-	font-style: bold;
-	font-color: ff3366;
-}
 .hidden {
 	visibility: hidden;
 }
@@ -14,52 +8,38 @@ body {
 	margin: 15px;
 	overflow: hidden;
 	font-family: helvetica, arial, sans-serif;
-	background-image: url("../images/textures/txt10.jpg");
+	background-image: url("../images/textures/txt11.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-/* 
-.leftpart {
-	box-sizing: border-box;
-	padding-right: 5px;
-	width: 30%;
-	float: left;
-	text-align: right;
-	border-right: 1px solid black;
-}
-.rightpart {
-	width: 68%;
-	float: right;
+h1 {
 	
+	font-size: 30px;
+	font-family: georgia, serif;
+	font-style: bold-italic;
+	color: #ff3366;
+	vertical-align= bottom;
 }
-.descr-text {
-	box-sizing: border-box;
-
-}
-OVERRIDE ME */
 .tt{
-	margin-top: 20px;
+	margin-top: 20%;
 	width: 100%;
-	height: 70%;
-	/*border: 1px;*/
+	height: 60%;
 }
 .tdleft {
-	vertical-align: bottom;
 	text-align: right; 
 }
 .tdright {
-	vertical-align: bottom;
 	text-align: left; 
 }
 /* LINKS*/
 a:link {
-	color: #9F2C06;
+	color: #ff3366;
 }
 a:visited {
-	color: #72240A;
+	color: #ff9999;
 }
 a:hover {
-	color: #FF4000;
+	color: #ff0033;
 	
 }
 
