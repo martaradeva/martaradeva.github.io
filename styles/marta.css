@@ -1,11 +1,10 @@
-html, body {
+/* OVERRIDE ME html, body {
 	height: 100%;
-}
+}*/
 .hidden {
 	visibility: hidden;
 }
 body {
-	margin: 15px;
 	overflow: hidden;
 	font-family: helvetica, arial, sans-serif;
 	background-image: url("../images/bg-gray.png");
@@ -30,11 +29,13 @@ h1 {
 	height: 60%;
 }
 .tdleft {
+	width: 70%;
 	text-align: right;
 	vertical-align: bottom;
 	padding-right: 20px; 
 }
 .tdright {
+	width: 29%;
 	text-align: left; 
 	vertical-align: bottom; 
 }
@@ -49,4 +50,17 @@ a:hover {
 	color: #ff0033;
 	
 }
-
+.pr-image {
+	width: 70%;
+	min-width:100px;
+}
+.imglink {
+	
+}
+td a {
+	display: inline-block;
+	width:24%;
+}
+td a img{
+	width: 100%;
+}
