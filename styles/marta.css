@@ -55,10 +55,10 @@ a:hover {
 	min-width:100px;
 }
 
-td a {
+/* OVERRIDE MEtd a {
 	display: inline-block;
 	width:24%;
 }
 td a img{
 	width: 100%;
-}
+} */

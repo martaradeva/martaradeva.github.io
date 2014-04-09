@@ -42,8 +42,6 @@ entext = {
 	:hlink => '<a  href="../bg/index.html">Страницата на български</a>',
 	:file_url => ".\\en\\index.html"}
 languages = [bgtext, entext]
-a="trial_list = wsbody.%(bgtext)
-puts trial_list"
 languages.each do |lang_curr| 
 	temp_text = wsbody.%(lang_curr)
 	File.write(lang_curr[:file_url], temp_text)
