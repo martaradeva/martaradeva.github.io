@@ -1,30 +1,17 @@
 # encoding: utf-8
-bgtext = {
-	:name_title => 'Мартина Радева',
-	:text => 'Добре дошли на личната ми страница.<br>Тук може да намерите връзки за присъствието ми в интернет.',
-	:hlink => '<a  href="../en/index.html">This site in English</a>'
-	:url => '.\\bg\\index1.html'
-}
-entext = {
-	:name_title => 'Martina Radeva',
-	:text => 'Welcome to my personal homepage.<br>Here you can find links to my profile in various social networks.',
-	:hlink => '<a  href="../bg/index.html">Страницата на български</a>'
-	:url => '.\\en\\index1.html'
-}
-
 wsbody='<!DOCTYPE html>
-<!-- ENGLISH version -->
+<!-- BULGARIAN version -->
 <html>
 <head>
 	<title>%{name_title}</title>
 	<link rel="stylesheet" type="text/css" href="../styles/marta.css">
 </head>
 <body>
-	<table class="tt" border="1">
+	<table class="tt">
 		<tr> 
 			<td class="tdleft"><h1>%{name_title}
 			</h1></td>
-			<td class="tdright"><img class="pr-image" src="../images/profile_sm.png"></td>
+			<td><img class="pr-image" src="../images/profile_sm.png"></td>
 		</tr>
 		<tr>
 			<td class="tdleft">
@@ -44,4 +31,23 @@ wsbody='<!DOCTYPE html>
 	</table>	
 </body>
 </html>'
-File.write(".\\rubytest\\bg.html", wsbody)
+bgtext = {
+	:name_title => 'Мартина Радева',
+	:text => 'Добре дошли на личната ми страница.<br>Тук може да намерите връзки за присъствието ми в интернет.',
+	:hlink => '<a  href="../en/index.html">This site in English</a>',
+	:file_url => ".\\bg\\index.html"}
+entext = {
+	:name_title => 'Martina Radeva',
+	:text => 'Welcome to my personal homepage.<br>Here you can find links to my profile in various social networks.',
+	:hlink => '<a  href="../bg/index.html">Страницата на български</a>',
+	:file_url => ".\\en\\index.html"}
+languages = [bgtext, entext]
+a="trial_list = wsbody.%(bgtext)
+puts trial_list"
+languages.each do |lang_curr| 
+	temp_text = wsbody.%(lang_curr)
+	File.write(lang_curr[:file_url], temp_text)
+end
+
+
+
