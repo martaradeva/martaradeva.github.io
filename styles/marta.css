@@ -54,13 +54,13 @@ a:hover {
 	width: 70%;
 	min-width:100px;
 }
-.bgl .bgl {
+.bg .bg {
 	border-width: 1px;
-	background-color: #ff3366;
+	background-color: #ff9999;
 }
-.enl .enl {
+.en .en {
 	border-width: 1px;
-	background-color: #ff3366;
+	background-color: #ff9999;
 
 }
 /* OVERRIDE MEtd a {
