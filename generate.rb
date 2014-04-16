@@ -19,7 +19,7 @@ languages = {
 languages.each do |language, content|
 	temp_text = wsbody.%(content)
 	path = '.\\' + language.to_s + '\\index.html'
-	puts path
-	puts temp_text
-	# File.write(path, temp_text)
+	# puts path
+	# puts temp_text
+	File.write(path, temp_text)
 end
