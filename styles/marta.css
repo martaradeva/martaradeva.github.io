@@ -54,7 +54,15 @@ a:hover {
 	width: 70%;
 	min-width:100px;
 }
+.bgl .bgl {
+	border-width: 1px;
+	background-color: #ff3366;
+}
+.enl .enl {
+	border-width: 1px;
+	background-color: #ff3366;
 
+}
 /* OVERRIDE MEtd a {
 	display: inline-block;
 	width:24%;
