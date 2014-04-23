@@ -1,0 +1,13 @@
+---
+:bg:
+  :name_title: Мартина Радева
+  :text: Добре дошли на личната ми страница.
+  :text1: Тук може да намерите връзки за присъствието ми в интернет.
+  :language_link: ../en/index.html
+  :language_link_text: This site in English
+:en:
+  :name_title: Martina Radeva
+  :text: Welcome to my personal homepage.
+  :text1: Here you can find links to my profile in various social networks.
+  :language_link: ../bg/index.html
+  :language_link_text: Страницата на български

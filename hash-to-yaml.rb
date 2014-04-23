@@ -16,5 +16,5 @@ languages = {
 		:language_link_text => 'Страницата на български',
 	},
 }
-# puts languages.to_yaml
-	File.write(".\\libraries\\translations.yml", languages.to_yaml)
+# temp_yaml = languages.to_yaml
+File.write(".\\libraries\\translations.yml", languages.to_yaml)
