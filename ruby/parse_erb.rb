@@ -7,5 +7,5 @@ language_current = languages[:bg]
 erb_template = File.read('..\template.html.erb')
 test_blah = ERB.new(erb_template)
 test_string = test_blah.result
-puts test_string
-# File.write('..\rubytest\index.html', test_string)
+# puts test_string
+File.write('..\rubytest\index.html', test_string)
