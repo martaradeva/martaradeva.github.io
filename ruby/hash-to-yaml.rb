@@ -1,5 +1,6 @@
 # encoding: utf-8
 require 'yaml'
+
 languages = {
 	:bg => {
 		:name_title => 'Мартина Радева',
@@ -16,5 +17,4 @@ languages = {
 		:language_link_text => 'Страницата на български',
 	},
 }
-# temp_yaml = languages.to_yaml
-File.write(".\\libraries\\translations.yml", languages.to_yaml)
+File.write("..\\libraries\\translations.yml", languages.to_yaml)
