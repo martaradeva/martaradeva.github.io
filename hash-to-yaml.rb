@@ -1,5 +1,5 @@
 # encoding: utf-8
-wsbody = File.read('template.html')
+require 'yaml'
 languages = {
 	:bg => {
 		:name_title => 'Мартина Радева',
@@ -16,11 +16,5 @@ languages = {
 		:language_link_text => 'Страницата на български',
 	},
 }
-languages.each do |language, content|
-	content[:current_language] = language.to_s 
-	temp_text = wsbody % content
-	path = '.\\' + language.to_s + '\\index.html'
-	# puts path
-	# puts temp_text
-	File.write(path, temp_text)
-end
+# puts languages.to_yaml
+	File.write(".\\libraries\\translations.yml", languages.to_yaml)
