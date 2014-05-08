@@ -2,11 +2,11 @@
 require 'yaml'
 require 'erb'
 
-wsbody = File.read('..\template.html.erb')
+website_body = File.read('..\template.html.erb')
 languages = YAML.load_file("..\\libraries\\translations.yml")
 languages.each do |language, content|
 	content[:id] = language.to_s 
-	temp_text = ERB.new(wsbody).result(binding)
+	rendered_html = ERB.new(website_body).result(binding)
 	path = '..\\' + content[:id] + '\\index.html'
-	File.write(path, temp_text)
+	File.write(path, rendered_html)
 end
